@@ -65,9 +65,9 @@ footer ul{
     list-style: none;
 }
 /* Media Queries */
-/* @media screen and (max-width: 600px){
+@media screen and (max-width: 600px){
     .col-2, .col-3{
         flex-basis: 100%;
         font-size: small;
     }
-} */
+}
