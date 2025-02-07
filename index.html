@@ -15,41 +15,54 @@
         <h3>Báo tường điện tử 12A1</h3>
     </header>
     <hr>
+
     <!-- Main -->
     <main>
+
         <!-- Post 1 -->
         <article class="post">
             <h2>Chuyện học đường</h2>
-            <p>Chuyện học đường là một trong những chủ đề được rất nhiều bạn trẻ quan tâm. Đây là nơi để chia sẻ những
-                kỷ niệm, những câu chuyện vui, buồn, những bài học quý giá mà mình đã trải qua trong thời học sinh.</p>
-            <img src="images/hoc-duong.jpg" alt="Học đường">
-            <p>Chuyện học đường không chỉ là những kỷ niệm vui vẻ, mà còn là những bài học quý giá mà mỗi người học sinh
-                cần phải trải qua. Đó là những bài học về tình bạn, tình yêu, tình thầy cô, tình đồng đội, tình người
+            <p>Chuyện học đường là một trong những chủ đề được rất nhiều bạn trẻ quan tâm. Đây là nơi để chia sẻ
+                những
+                kỷ niệm, những câu chuyện vui, buồn, những bài học quý giá mà mình đã trải qua trong thời học sinh.
+            </p>
+            <img src="img/hoc-duong.jpg" alt="Học đường">
+            <p>Chuyện học đường không chỉ là những kỷ niệm vui vẻ, mà còn là những bài học quý giá mà mỗi người học
+                sinh
+                cần phải trải qua. Đó là những bài học về tình bạn, tình yêu, tình thầy cô, tình đồng đội, tình
+                người
                 thân...</p>
         </article>
-        <hr>
+
         <!-- Post 2 -->
         <article class="post">
             <h2>Chuyện tình yêu</h2>
             <p>Chuyện tình yêu là một trong những chủ đề được rất nhiều bạn trẻ quan tâm. Đây là nơi để chia sẻ những kỷ
                 niệm, những câu chuyện vui, buồn, những bài học quý giá mà mình đã trải qua trong thời học sinh.</p>
-            <img src="images/tinh-yeu.jpg" alt="Tình yêu">
+            <img src="img/tinh-yeu.jpg" alt="Tình yêu">
             <p>Chuyện tình yêu không chỉ là những kỷ niệm vui vẻ, mà còn là những bài học quý giá mà mỗi người học sinh
                 cần phải trải qua. Đó là những bài học về tình bạn, tình yêu, tình thầy cô, tình đồng đội, tình người
                 thân...</p>
         </article>
-        <hr>
+
         <!-- Post 3 -->
         <article class="post">
             <h2>Chuyện tình bạn</h2>
-            <p>Chuyện tình bạn là một trong những chủ đề được rất nhiều bạn trẻ quan tâm. Đây là nơi để chia sẻ những kỷ
+            <p>Chuyện tình bạn là một trong những chủ đề được rất nhiều bạn trẻ quan tâm. Đây là nơi để chia sẻ
+                những kỷ
                 niệm, những câu chuyện vui, buồn, những bài học quý giá mà mình đã trải qua trong thời học sinh.</p>
-            <img src="images/tinh-ban.jpg" alt="Tình bạn">
-            <p>Chuyện tình bạn không chỉ là những kỷ niệm vui vẻ, mà còn là những bài học quý giá mà mỗi người học sinh
-                cần phải trải qua. Đó là những bài học về tình bạn, tình yêu, tình thầy cô, tình đồng đội, tình người
+            <img src="img/tinh-ban.jpg" alt="Tình bạn">
+            <p>Chuyện tình bạn không chỉ là những kỷ niệm vui vẻ, mà còn là những bài học quý giá mà mỗi người học
+                sinh
+                cần phải trải qua. Đó là những bài học về tình bạn, tình yêu, tình thầy cô, tình đồng đội, tình
+                người
                 thân...</p>
+
         </article>
+        <video src="chuyen-hoc-duong.mp4" controls></video>
+        <!-- <audio src="mot-duong-no-hoa.m4a" autoplay></audio> -->
         <hr>
+
         <!-- Comment -->
         <h3 style="text-align: center;">Bình luận</h3>
         <form action="comment.php" method="POST">
@@ -59,29 +72,42 @@
             <input type="text" id="name" name="name" placeholder="Lớp của bạn..." required>
             <label for="comment">Bình luận:</label>
             <textarea id="comment" name="comment" rows="5" style="max-width: auto;"
-                placeholder="Hãy cho mình biết cảm nghĩ của bạn...." required></textarea>
-            <button type="submit">Gửi</button>
+                placeholder="  Hãy cho mình biết cảm nghĩ của bạn...." required></textarea>
+            <p id="thongbao" style="color: red;"></p>
+            <button type="submit" onclick="myFunction()">Gửi</button>
         </form>
+
+        <script>
+            function myFunction() {
+                if (document.getElementById("name").value == "" || document.getElementById("comment").value == "") {
+                    document.getElementById("thongbao").innerHTML = "Hãy nhập thông tin và bình luận của bạn";
+                    return false;
+                } else
+                    document.getElementById("thongbao").innerHTML = "Cảm ơn bạn đã góp ý";
+
+            }
+        </script>
     </main>
     <hr>
+
     <!-- Footer -->
     <footer>
         <h2>Thành viên nhóm 1</h2>
         <section class="group">
             <aside>
-                    <p>Nguyễn Thị Thu Ngân</p>
-                    <p>Nguyễn Phương Linh</p>
-                    <p>Khổng Thị Thảo Nhi</p>
-                    <p>Trần Thị Hồng Nhung</p>
-                    <p>Võ Ngọc Khánh Uyên</p>
+                <p>Nguyễn Thị Thu Ngân</p>
+                <p>Nguyễn Phương Linh</p>
+                <p>Khổng Thị Thảo Nhi</p>
+                <p>Trần Thị Hồng Nhung</p>
+                <p>Võ Ngọc Khánh Uyên</p>
             </aside>
 
             <aside>
-                    <p>Võ Ngọc Huy</p>
-                    <p>Nguyễn Thái Quyền</p>
-                    <p>Huỳnh Trần Hữu Huy</p>
-                    <p>Võ Trần Thanh Thiện</p>
-                    <p>Nguyễn Ngọc Trọng Tuân</p>
+                <p>Võ Ngọc Huy</p>
+                <p>Nguyễn Thái Quyền</p>
+                <p>Huỳnh Trần Hữu Huy</p>
+                <p>Võ Trần Thanh Thiện</p>
+                <p>Nguyễn Ngọc Trọng Tuân</p>
             </aside>
         </section>
         <hr>
