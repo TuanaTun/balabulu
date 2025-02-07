@@ -1,40 +1,44 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-body{
+body {
     font-family: 'Times New Roman', Times, serif;
     background-color: #ccc5b9;
 }
-.container{
-    max-width: 1170px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 20px;
+
+.container {
     text-align: center;
+    color: #f5f5f5;
 }
+
 /* Header */
-.post{
-    /* background-color: #9c9583; */
+.post {
     color: #836122;
     padding: 10px 0;
-    /* margin: 20px 0; */
 }
+
+.post img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+video {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
 /* Main */
-form{
+form {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
-/* comment css */
-form input{
+
+form input {
     padding: 10px;
     margin: 10px 0;
     width: 250px;
     border: 1px solid #ccc;
 }
-form button{
+
+form button {
     padding: 10px;
     margin: 10px 0;
     max-width: 100px;
@@ -43,31 +47,34 @@ form button{
     color: #f5f5f5;
     cursor: pointer;
 }
-form button:hover{
+
+form button:hover {
     background-color: #f5f5f5;
     color: #9c9583;
 }
 
 /* Footer */
-footer{
+footer {
     background: #9c9583;
     color: #f5f5f5;
-    font-size:14px;
+    font-size: 14px;
     padding: 5px 20px 5px 20px;
     text-align: center;
 }
-footer .group{
+
+footer .group {
     display: flex;
     justify-content: space-around;
 }
+
 /* Media Queries */
-@media screen and (max-width: 600px){ 
-    footer{
+@media screen and (max-width: 600px) {
+
+    footer {
         padding: 5px 10px 5px 10px;
     }
-    footer .group{
+
+    footer .group {
         display: block;
     }
 }
-
-
