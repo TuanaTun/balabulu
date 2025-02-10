@@ -27,13 +27,13 @@ function changeImg(emotionType, postId) {
     resetImages(postId);
     switch (emotionType) {
       case 1:
-        imgToChange.src = "./icon/ike-coor.png";
+        imgToChange.src = "ike-coor.png";
         break;
       case 2:
-        imgToChange.src = "./icon/ove-coor.png";
+        imgToChange.src = "ove-coor.png";
         break;
       case 3:
-        imgToChange.src = "./icon/sad-coor.png";
+        imgToChange.src = "sad-coor.png";
         break;
     }
     currentEmotion[postId][emotionType - 1] = 1;
@@ -41,16 +41,14 @@ function changeImg(emotionType, postId) {
 }
 
 function resetImages(postId) {
-  document.getElementById("imgFirst-" + postId + "-1").src = "./icon/ike.png";
-  document.getElementById("imgSecond-" + postId + "-2").src = "./icon/ove.png";
-  document.getElementById("imgThird-" + postId + "-3").src = "./icon/sad.png";
+  document.getElementById("imgFirst-" + postId + "-1").src = "ike.png";
+  document.getElementById("imgSecond-" + postId + "-2").src = "ove.png";
+  document.getElementById("imgThird-" + postId + "-3").src = "sad.png";
 
-  document.getElementById("showImgFirst-" + postId + "-1").src =
-    "./icon/ike-coor.png";
+  document.getElementById("showImgFirst-" + postId + "-1").src = "ike-coor.png";
   document.getElementById("showImgSecond-" + postId + "-2").src =
-    "./icon/ove-coor.png";
-  document.getElementById("showImgThird-" + postId + "-3").src =
-    "./icon/sad-coor.png";
+    "ove-coor.png";
+  document.getElementById("showImgThird-" + postId + "-3").src = "sad-coor.png";
 }
 
 // Check input
