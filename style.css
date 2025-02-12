@@ -26,7 +26,7 @@ header {
 }
 
 .post p {
-    color: #a07855ff;
+    color: #a07855;
     padding: 10px 0;
 }
 
@@ -45,7 +45,9 @@ header {
     max-width: 100%;
     border-radius: 10px;
 }
-
+.post h2{
+ color: #c1292e;
+}
 /* Emotion */
 .emotion-showing {
     display: flex;
