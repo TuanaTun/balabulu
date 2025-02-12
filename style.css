@@ -28,6 +28,7 @@ header {
 .post p {
     color: #a07855;
     padding: 10px 0;
+    font-size: large;
 }
 
 .post img {
@@ -59,7 +60,6 @@ header {
     margin-right: -10px;
     border: solid #fff;
     border-radius: 50%;
-
 }
 
 .emotion-show {
